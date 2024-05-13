@@ -46,8 +46,8 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
-    
-    #other
+
+    # Other
     'crispy_forms',
 ]
 
@@ -90,7 +90,7 @@ TEMPLATES = [
     },
 ]
 
-MESSAGES_STORAGE = 'django.contib.messages.storage.session.SessionStorage'
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
@@ -168,7 +168,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-#stripe
+# Stripe
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
